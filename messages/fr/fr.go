@@ -1,0 +1,28 @@
+package fr
+
+var FR = map[string]string{
+	"notNull":              "le champ ne peut pas être vide ou avoir une valeur nulle",
+	"email":                "le champ doit être un email",
+	"numeric":              "le champ doit être une valeur numérique",
+	"containsString":       "le champ doit contenir au moins un caractère",
+	"containsNumber":       "le champ doit contenir au moins un chiffre",
+	"containsSpecialChars": "le champ doit contenir au moins un des caractères spéciaux",
+	"eqNumber":             "le champ doit être égal à",
+	"eqString":             "la longueur du champ doit être égale à",
+	"gtNumber":             "le champ doit être supérieur à",
+	"gtString":             "la longueur du champ doit être supérieure à",
+	"ltNumber":             "le champ doit être inférieur à",
+	"ltString":             "la longueur du champ doit être inférieure à",
+	"lteNumber":            "le champ doit être égal ou inférieur à",
+	"lteString":            "la longueur du champ doit être égale ou inférieure à",
+	"gteNumber":            "le champ doit être égal ou supérieur à",
+	"gteString":            "la longueur du champ doit être égale ou supérieure à",
+	"neNumber":             "le champ ne doit pas être égal à",
+	"neString":             "la longueur du champ ne doit pas être égale à",
+	"contains":             "le champ doit contenir",
+	"notContains":          "le champ ne doit pas contenir",
+	"begin":                "le champ doit commencer par",
+	"notBegin":             "le champ ne doit pas commencer par",
+	"end":                  "le champ doit se terminer par",
+	"notEnd":               "le champ ne doit pas se terminer par",
+}
