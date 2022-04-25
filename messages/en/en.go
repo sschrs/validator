@@ -1,0 +1,28 @@
+package en
+
+var EN = map[string]string{
+	"notNull":              "field can't be empty or null value",
+	"email":                "field must be an email",
+	"numeric":              "field must be a numeric value",
+	"containsString":       "field must contain at least one character",
+	"containsNumber":       "field must contain at least one number",
+	"containsSpecialChars": "field must contain at least one of the special chars",
+	"eqNumber":             "field must be equal to",
+	"eqString":             "field's length must be equal to",
+	"gtNumber":             "field must be greater than",
+	"gtString":             "field's length must be greater than",
+	"ltNumber":             "field must be less than",
+	"ltString":             "field's length must be less than",
+	"lteNumber":            "field must be equal to or less than",
+	"lteString":            "field's length must be equal to or less than",
+	"gteNumber":            "field must be equal to or greater than",
+	"gteString":            "field's length must be equal to or greater than",
+	"neNumber":             "field must be not equal to",
+	"neString":             "field's length must be not equal to",
+	"contains":             "field must contain",
+	"notContains":          "field must not contain",
+	"begin":                "field must begin with",
+	"notBegin":             "field must not begin with",
+	"end":                  "field must end with",
+	"notEnd":               "field must not end with",
+}
