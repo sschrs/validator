@@ -1,0 +1,28 @@
+package nl
+
+var NL = map[string]string{
+	"notNull":              "veld mag niet leeg zijn of een null-waarde hebben",
+	"email":                "veld moet een e-mail zijn",
+	"numeric":              "veld moet een numerieke waarde zijn",
+	"containsString":       "veld moet ten minste één teken bevatten",
+	"containsNumber":       "veld moet ten minste één cijfer bevatten",
+	"containsSpecialChars": "veld moet minstens één van de speciale tekens bevatten",
+	"eqNumber":             "veld moet gelijk zijn aan",
+	"eqString":             "de lengte van het veld moet gelijk zijn aan",
+	"gtNumber":             "veld moet groter zijn dan",
+	"gtString":             "de lengte van het veld moet groter zijn dan",
+	"ltNumber":             "veld moet kleiner zijn dan",
+	"ltString":             "de lengte van het veld moet kleiner zijn dan",
+	"lteNumber":            "veld moet gelijk zijn aan of kleiner zijn dan",
+	"lteString":            "de lengte van het veld moet gelijk zijn aan of kleiner zijn dan",
+	"gteNumber":            "veld moet gelijk zijn aan of groter zijn dan",
+	"gteString":            "de lengte van het veld moet gelijk zijn aan of groter zijn dan",
+	"neNumber":             "veld mag niet gelijk zijn aan",
+	"neString":             "de lengte van het veld mag niet gelijk zijn aan",
+	"bevat":                "veld moet bevatten",
+	"notContains":          "veld mag niet bevatten",
+	"begin":                "veld moet beginnen met",
+	"notBegin":             "veld mag niet beginnen met",
+	"end":                  "veld moet eindigen op",
+	"notEnd":               "veld mag niet eindigen op",
+}
