@@ -1,8 +1,8 @@
 package messages
 
 import (
-	"govalidator/messages/en"
-	"govalidator/messages/tr"
+	"validator/messages/en"
+	"validator/messages/tr"
 )
 
 var Languages = map[string]map[string]string{
