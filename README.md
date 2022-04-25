@@ -60,3 +60,25 @@ You can use the validator.ChangeMessage() function to change the message body. T
 ```
 err := validator.ChangeMessage("notNull", "anan")
 ```
+
+### Add Custom Validation Func
+The AddCustomValidation() function can be used to add a custom validation function. This function takes two parameters, the first validation name and the second validation function.<br>
+First, let's examine the structure of the validation function. This function takes a structure of type validator.Field and a value of type string as a parameter.
+```
+func validationFunc(field validator.Field,value string) (bool,string){}
+```
+The field structure is as follows. The name value is the name of the fields in the structure. Value is the value of this field, and tag is the tag corresponding to this field.
+```
+type Field struct {
+	Name  string
+	Value reflect.Value
+	Tag   string
+}
+```
+The second parameter of the validation function represents the value of the validation rule separated by '=', if any.
+
+
+
+
+
+
