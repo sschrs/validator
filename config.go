@@ -1,8 +1,8 @@
-package validator
+package govalidator
 
 import (
 	"errors"
-	"validator/messages"
+	"govalidator/messages"
 )
 
 var (

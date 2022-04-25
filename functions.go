@@ -1,12 +1,12 @@
-package validator
+package govalidator
 
 import (
 	"fmt"
+	"govalidator/messages"
 	"net/mail"
 	"regexp"
 	"strconv"
 	"strings"
-	"validator/messages"
 )
 
 var mapRulesToFuncs = map[string]func(field Field, value string) (bool, string){
