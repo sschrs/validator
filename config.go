@@ -2,22 +2,34 @@ package validator
 
 import (
 	"errors"
+	"strings"
 	"validator/messages"
 )
 
 var (
 	defaultLanguage     = "en"
+	supportedLanguages  = []string{"en", "de", "tr", "es", "fr", "nl", "jp", "pt"}
 	defaultTagName      = "validate"
 	defaultTagSeperator = ","
-	specialChars        = "@#$%^&+=!?.,;:"
+	specialChars        = "@#$%^&+!?.,;:"
 )
 
-func ChangeDefaultLanguage(lang string) {
-	defaultLanguage = lang
+func ChangeDefaultLanguage(lang string) string {
+	for _, supportedLang := range supportedLanguages {
+		if supportedLang == lang {
+			defaultLanguage = lang
+			return defaultLanguage
+		}
+	}
+	return defaultLanguage
 }
 
-func ChangeTagName(tagName string) {
+func ChangeTagName(tagName string) string {
+	if tagName == "=" {
+		return defaultTagName
+	}
 	defaultTagName = tagName
+	return defaultTagName
 }
 
 func ChangeMessage(validation, newMessage string) error {
@@ -29,6 +41,9 @@ func ChangeMessage(validation, newMessage string) error {
 	}
 }
 
-func ChangeSpecialChars(chars string) {
-	specialChars = chars
+func ChangeSpecialChars(chars string) string {
+	if !strings.Contains(chars, "=") {
+		specialChars = chars
+	}
+	return specialChars
 }
