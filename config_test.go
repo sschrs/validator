@@ -33,6 +33,7 @@ func TestChangeTagName(t *testing.T) {
 		{"=", "validate"},
 		{"validator", "validator"},
 		{"tagName", "tagName"},
+		{"validate", "validate"},
 	}
 
 	for _, test := range tests {

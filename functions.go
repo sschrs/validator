@@ -56,8 +56,8 @@ func email(field Field, value string) (bool, string) {
 }
 
 func numeric(field Field, value string) (bool, string) {
-	ok := field.Value.CanInt()
-	if !ok && field.Value.String() != "" {
+	_, err := strconv.Atoi(field.Value.String())
+	if err != nil && field.Value.String() != "" {
 		return false, fmt.Sprintf("%s %s", field.Name, messages.Languages[defaultLanguage]["numeric"])
 	}
 	return true, ""
@@ -106,7 +106,7 @@ func eq(field Field, value string) (bool, string) {
 	}
 
 	switch field.Value.Kind().String() {
-	case "int", "int8", "int16", "int32", "int64", "float32", "float64":
+	case "int", "int8", "int16", "int32", "int64", "float32", "float64", "bool":
 		if _value != field.Value.Int() {
 			return false, fmt.Sprintf("%s %s %d", field.Name, messages.Languages[defaultLanguage]["eqNumber"], _value)
 		}
