@@ -1,0 +1,28 @@
+package pt
+
+var PT = map[string]string{
+	"notNull":              "campo não pode ser vazio ou valor nulo",
+	"email":                "o campo deve ser um e-mail",
+	"numeric":              "o campo deve ser um valor numérico",
+	"containsString":       "o campo deve conter pelo menos um caractere",
+	"containsNumber":       "o campo deve conter pelo menos um número",
+	"containsSpecialChars": "o campo deve conter pelo menos um dos caracteres especiais",
+	"eqNumber":             "campo deve ser igual a",
+	"eqString":             "o comprimento do campo deve ser igual a",
+	"gtNumber":             "campo deve ser maior que",
+	"gtString":             "o comprimento do campo deve ser maior que",
+	"ltNumber":             "campo deve ser menor que",
+	"ltString":             "o comprimento do campo deve ser menor que",
+	"lteNumber":            "campo deve ser igual ou menor que",
+	"lteString":            "o comprimento do campo deve ser igual ou menor que",
+	"gteNumber":            "campo deve ser igual ou maior que",
+	"gteString":            "o comprimento do campo deve ser igual ou maior que",
+	"neNumber":             "campo não deve ser igual a",
+	"neString":             "o comprimento do campo não deve ser igual a",
+	"contains":             "o campo deve conter",
+	"notContains":          "campo não deve conter",
+	"begin":                "o campo deve começar com",
+	"notBegin":             "o campo não deve começar com",
+	"end":                  "o campo deve terminar com",
+	"notEnd":               "o campo não deve terminar com",
+}

@@ -19,7 +19,7 @@ var IT = map[string]string{
 	"gteString":            "la lunghezza del campo deve essere uguale o maggiore di",
 	"neNumber":             "il campo deve essere diverso da",
 	"neString":             "la lunghezza del campo non deve essere uguale a",
-	"contiene":             "il campo deve contenere",
+	"contains":             "il campo deve contenere",
 	"notContains":          "il campo non deve contenere",
 	"begin":                "il campo deve iniziare con",
 	"notBegin":             "il campo non deve iniziare con",

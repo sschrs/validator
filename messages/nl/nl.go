@@ -19,7 +19,7 @@ var NL = map[string]string{
 	"gteString":            "de lengte van het veld moet gelijk zijn aan of groter zijn dan",
 	"neNumber":             "veld mag niet gelijk zijn aan",
 	"neString":             "de lengte van het veld mag niet gelijk zijn aan",
-	"bevat":                "veld moet bevatten",
+	"contains":             "veld moet bevatten",
 	"notContains":          "veld mag niet bevatten",
 	"begin":                "veld moet beginnen met",
 	"notBegin":             "veld mag niet beginnen met",

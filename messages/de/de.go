@@ -19,7 +19,7 @@ var DE = map[string]string{
 	"gteString":            "Feldlänge muss gleich oder größer sein als",
 	"neNumber":             "Feld muss ungleich sein:",
 	"neString":             "Feldlänge darf nicht gleich sein:",
-	"enthält":              "Feld muss enthalten",
+	"contains":             "Feld muss enthalten",
 	"notContains":          "Feld darf nichts enthalten",
 	"begin":                "Feld muss beginnen mit",
 	"notBegin":             "Feld darf nicht beginnen mit",

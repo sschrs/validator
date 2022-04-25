@@ -7,6 +7,7 @@ import (
 	"validator/messages/fr"
 	"validator/messages/it"
 	"validator/messages/nl"
+	"validator/messages/pt"
 	"validator/messages/tr"
 )
 
@@ -18,4 +19,5 @@ var Languages = map[string]map[string]string{
 	"es": es.ES,
 	"nl": nl.NL,
 	"it": it.IT,
+	"pt": pt.PT,
 }

@@ -19,7 +19,7 @@ var ES = map[string]string{
 	"gteString":            "la longitud del campo debe ser igual o mayor que",
 	"neNumber":             "el campo no debe ser igual a",
 	"neString":             "la longitud del campo no debe ser igual a",
-	"contiene":             "el campo debe contener",
+	"contains":             "el campo debe contener",
 	"notContains":          "el campo no debe contener",
 	"begin":                "el campo debe comenzar con",
 	"notBegin":             "el campo no debe comenzar con",
