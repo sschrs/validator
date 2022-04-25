@@ -1,6 +1,7 @@
 package validator
 
 import (
+	"strings"
 	"testing"
 )
 
@@ -460,4 +461,29 @@ func TestNotEnd(t *testing.T) {
 			t.Errorf("Test Failed for notEnd. Expected: %v Output: %v", test.expected, ok)
 		}
 	}
+}
+
+type testStructCustomValidation struct {
+	Field string `validate:"containsAmp"`
+}
+
+func TestAddCustomValidation(t *testing.T) {
+	AddCustomValidation("containsAmp", func(field Field, value string) (bool, string) {
+		if ok := strings.Contains(field.Value.String(), "&"); !ok {
+			return ok, "Field must contain '&'"
+		}
+		return true, ""
+	})
+
+	var struct1 testStructCustomValidation
+	var struct2 testStructCustomValidation
+	struct1.Field = "hello world"
+	struct2.Field = "hello world&universe"
+
+	test1, _ := Validate(&struct1)
+	test2, _ := Validate(&struct2)
+	if test1 || !test2 {
+		t.Error("Test Failed: AddCustomValidation")
+	}
+
 }
