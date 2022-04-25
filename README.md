@@ -131,6 +131,8 @@ type S struct {
 |end|must end with given value|
 |notEnd|must not end with given value|
 
+eq,ne,gt,gte,lt,lte -> Length for string expressions and values for numeric expressions are compared.
+
 ### Supported Languages
 |Language|Code|
 |--------|----|
