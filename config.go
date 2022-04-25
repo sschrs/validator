@@ -8,7 +8,7 @@ import (
 
 var (
 	defaultLanguage     = "en"
-	supportedLanguages  = []string{"en", "de", "tr", "es", "fr", "nl", "jp", "pt"}
+	supportedLanguages  = []string{"en", "de", "tr", "es", "fr", "nl", "it", "pt"}
 	defaultTagName      = "validate"
 	defaultTagSeperator = ","
 	specialChars        = "@#$%^&+!?.,;:"

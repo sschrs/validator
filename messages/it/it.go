@@ -1,0 +1,28 @@
+package it
+
+var IT = map[string]string{
+	"notNull":              "il campo non può essere vuoto o valore nullo",
+	"email":                "il campo deve essere un'email",
+	"numeric":              "il campo deve essere un valore numerico",
+	"containsString":       "il campo deve contenere almeno un carattere",
+	"containsNumber":       "il campo deve contenere almeno un numero",
+	"containsSpecialChars": "il campo deve contenere almeno uno dei caratteri speciali",
+	"eqNumber":             "il campo deve essere uguale a",
+	"eqString":             "la lunghezza del campo deve essere uguale a",
+	"gtNumber":             "il campo deve essere maggiore di",
+	"gtString":             "la lunghezza del campo deve essere maggiore di",
+	"ltNumber":             "il campo deve essere minore di",
+	"ltString":             "la lunghezza del campo deve essere inferiore a",
+	"lteNumber":            "il campo deve essere uguale o minore di",
+	"lteString":            "la lunghezza del campo deve essere uguale o inferiore a",
+	"gteNumber":            "il campo deve essere uguale o maggiore di",
+	"gteString":            "la lunghezza del campo deve essere uguale o maggiore di",
+	"neNumber":             "il campo deve essere diverso da",
+	"neString":             "la lunghezza del campo non deve essere uguale a",
+	"contiene":             "il campo deve contenere",
+	"notContains":          "il campo non deve contenere",
+	"begin":                "il campo deve iniziare con",
+	"notBegin":             "il campo non deve iniziare con",
+	"end":                  "il campo deve terminare con",
+	"notEnd":               "il campo non deve terminare con",
+}
