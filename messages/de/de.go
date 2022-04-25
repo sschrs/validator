@@ -1,0 +1,28 @@
+package de
+
+var DE = map[string]string{
+	"notNull":              "Feld darf nicht leer oder Nullwert sein",
+	"email":                "Feld muss eine E-Mail sein",
+	"numeric":              "Feld muss ein numerischer Wert sein",
+	"containsString":       "Feld muss mindestens ein Zeichen enthalten",
+	"containsNumber":       "Feld muss mindestens eine Zahl enthalten",
+	"containsSpecialChars": "Feld muss mindestens eines der Sonderzeichen enthalten",
+	"eqNumber":             "Feld muss gleich sein:",
+	"eqString":             "Feldlänge muss gleich sein:",
+	"gtNumber":             "Feld muss größer sein als",
+	"gtString":             "Feldlänge muss größer sein als",
+	"ltNumber":             "Feld muss kleiner sein als",
+	"ltString":             "Feldlänge muss kleiner sein als",
+	"lteNumber":            "Feld muss gleich oder kleiner sein als",
+	"lteString":            "Feldlänge muss kleiner oder gleich sein als",
+	"gteNumber":            "Feld muss gleich oder größer sein als",
+	"gteString":            "Feldlänge muss gleich oder größer sein als",
+	"neNumber":             "Feld muss ungleich sein:",
+	"neString":             "Feldlänge darf nicht gleich sein:",
+	"enthält":              "Feld muss enthalten",
+	"notContains":          "Feld darf nichts enthalten",
+	"begin":                "Feld muss beginnen mit",
+	"notBegin":             "Feld darf nicht beginnen mit",
+	"end":                  "Feld muss enden mit",
+	"notEnd":               "Feld darf nicht enden mit",
+}
