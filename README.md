@@ -39,3 +39,9 @@ func main() {
 }
 ```
 
+## Change Default Language
+You can use the validator.ChangeDefaultLanguage() function to change the default language. Available languages: English, German, Turkish, French, Italian, Spanish, Dutch, Portuguese
+```
+validator.ChangeDefaultLanguage("tr") //Change language to turkish
+```
+
