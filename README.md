@@ -76,9 +76,39 @@ type Field struct {
 }
 ```
 The second parameter of the validation function represents the value of the validation rule separated by '=', if any.
+#### Sample 1
+Custom validation function that checks if the value of the structure's field contains an '&' sign.
+```
+validator.AddCustomValidation("containsAmp", func(field validator.Field, value string) (bool, string) {
+	if !strings.Contains(field.Value.String(), "&") {
+		return false, fmt.Sprintf("%s field must containt '&'", field.Name)
+	}
+	return true, ""
+})
 
+type S struct {
+	Text string `validate:"containsAmp"` // U can use with validation name in the tags
+}
+```
 
+#### Sample 2
+The custom validation function, which checks whether the number is divisible by the given value, is as follows.
+```
+validator.AddCustomValidation("divisible", func(field validator.Field, _value string) (bool, string) {
+	value, err := strconv.Atoi(_value)
+	if err != nil {
+		panic("the value can not convert to int")
+	}
+	if field.Value.Int()%int64(value) != 0 {
+		return false, fmt.Sprintf("%s field must be divisible by %d", field.Name, value)
+	}
+	return true, ""
+})
 
+type S struct {
+	Number int `validate:"divisible=3"`
+}
+```
 
 
 
