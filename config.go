@@ -2,8 +2,8 @@ package validator
 
 import (
 	"errors"
+	"github.com/sschrs/validator/messages"
 	"strings"
-	"validator/messages"
 )
 
 var (

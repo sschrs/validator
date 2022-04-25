@@ -1,14 +1,14 @@
 package messages
 
 import (
-	"validator/messages/de"
-	"validator/messages/en"
-	"validator/messages/es"
-	"validator/messages/fr"
-	"validator/messages/it"
-	"validator/messages/nl"
-	"validator/messages/pt"
-	"validator/messages/tr"
+	"github.com/sschrs/validator/messages/de"
+	"github.com/sschrs/validator/messages/en"
+	"github.com/sschrs/validator/messages/es"
+	"github.com/sschrs/validator/messages/fr"
+	"github.com/sschrs/validator/messages/it"
+	"github.com/sschrs/validator/messages/nl"
+	"github.com/sschrs/validator/messages/pt"
+	"github.com/sschrs/validator/messages/tr"
 )
 
 var Languages = map[string]map[string]string{
