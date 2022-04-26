@@ -58,7 +58,7 @@ newSpecialChars := validator.ChangeSpecialChars("?=&!")
 ### Change Validation Message
 You can use the validator.ChangeMessage() function to change the message body. This function takes two parameters, the first validation name and the second new message body, and returns an error if it cannot find a valid validation.
 ```go
-err := validator.ChangeMessage("notNull", "anan")
+err := validator.ChangeMessage("notNull", "new message for notNull validation")
 ```
 
 ### Add Custom Validation Func
