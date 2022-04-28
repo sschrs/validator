@@ -1,7 +1,6 @@
 package validator
 
 import (
-	"fmt"
 	"reflect"
 	"strings"
 )
@@ -29,7 +28,7 @@ func validateField(field Field) (bool, string) {
 		if strings.Contains(rule, "=") {
 			parseRule := strings.Split(rule, "=")
 			if mapRulesToFuncs[parseRule[0]] == nil {
-				panic(fmt.Sprintf("unknown validation tag: %s for %s", rule, field.Name))
+				continue
 			}
 			ok, message := mapRulesToFuncs[parseRule[0]](field, parseRule[1])
 			if !ok {
@@ -37,7 +36,7 @@ func validateField(field Field) (bool, string) {
 			}
 		} else {
 			if mapRulesToFuncs[rule] == nil {
-				panic(fmt.Sprintf("unknown validation tag: %s for %s", rule, field.Name))
+				continue
 			}
 			ok, message := mapRulesToFuncs[rule](field, "")
 			if !ok {
