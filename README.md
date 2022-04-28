@@ -1,6 +1,6 @@
 # Go Validator Package
 [![Go Reference](https://pkg.go.dev/badge/github.com/sschrs/validator.svg)](https://pkg.go.dev/github.com/sschrs/validator)
-![Version: v1.0.0](https://badgen.net/badge/version/v.1.0.0/orange)
+![Version: v1.0.0](https://badgen.net/badge/version/v1.0.0/orange)
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 <br>
 Validator is a ligth package that allows you to validate over Go Structures and Tags. You can start using directly by adding the relevant tags to the structures you have created.<br><br>
